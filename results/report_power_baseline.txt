@@ -1,0 +1,12 @@
+# OpenROAD report_power, baseline PE (transcribed from tool output)
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             6.04e-03   4.81e-05   1.71e-09   6.09e-03  88.2%
+Combinational          3.22e-04   4.91e-04   4.41e-09   8.13e-04  11.8%
+Clock                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  6.36e-03   5.39e-04   6.12e-09   6.90e-03 100.0%
+                          92.2%       7.8%       0.0%

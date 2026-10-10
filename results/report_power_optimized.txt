@@ -1,0 +1,13 @@
+# OpenROAD report_power, proposed PE (transcribed from tool output)
+# Measured on the un-isolated multiplier RTL variant; see README.
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             5.05e-03   5.15e-05   1.47e-09   5.10e-03  85.5%
+Combinational          3.31e-04   5.35e-04   4.58e-09   8.67e-04  14.5%
+Clock                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  5.38e-03   5.87e-04   6.05e-09   5.97e-03 100.0%
+                          90.2%       9.8%       0.0%

@@ -1,0 +1,6 @@
+*.vvp
+*.vcd
+*.lib
+*_syn.v
+*.log
+__pycache__/

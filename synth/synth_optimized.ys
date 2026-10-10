@@ -1,0 +1,13 @@
+# Run this first: yosys synth_optimized.ys
+# Produces pe_optimized_syn.v -- the gate-level netlist OpenROAD needs.
+
+read_verilog ../rtl/pe_baseline_bf16.v
+read_verilog ../rtl/pe_optimized_nf4.v
+hierarchy -top pe_nf4_bf16_ws
+proc; opt; fsm; opt; memory; opt
+techmap; opt
+dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+opt_clean
+write_verilog -noattr pe_optimized_syn.v
+stat -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
